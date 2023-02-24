@@ -1,3 +1,9 @@
+// Start ToTOp btn
+let toTop = document.querySelector(".to_top");
+
+// Start Header 
+let header = document.querySelector('header');
+
 // Start Animation For Landing Section
 let landingP = document.querySelector(".landing .container .landing_content p");
 let landingH1 = document.querySelector(".landing .container .landing_content h1");
@@ -35,9 +41,19 @@ let aboutLink = document.querySelector(".about .container .about_info a");
 
 window.onscroll = _ => {
   if (window.scrollY >= ((aboutSection.offsetTop) - 650)) {
-    setTimeout(() => aboutSectionTitle.style.cssText = "transform: translateX(0%);",800)
-    setTimeout(() => aboutTitle.style.cssText = "transform: translateX(0%);",1400)
-    setTimeout(() => aboutContent.style.cssText = "transform: translateX(0%);",2000)
-    setTimeout(() => aboutLink.style.cssText = "transform: translateX(0%);",2600)
+    // Animation for about section 
+    setTimeout(() => aboutSectionTitle.style.cssText = "transform: translateX(0%);",800);
+    setTimeout(() => aboutTitle.style.cssText = "transform: translateX(0%);",1400);
+    setTimeout(() => aboutContent.style.cssText = "transform: translateX(0%);",2000);
+    setTimeout(() => aboutLink.style.cssText = "transform: translateX(0%);",2600);
   }
+
+  // Start Show Scroll ToTop btn
+  window.scrollY >= aboutSection.offsetTop 
+  ? toTop.style.cssText = " opacity: 1; visibility: visible " 
+  : toTop.style.cssText = "opacity: 0;  visibility: hidden"
+
+  // Edit Header Background 
+    window.scrollY >= 100 ? header.style.backgroundColor = "white" 
+                          : header.style.backgroundColor = "inherit";
 }
