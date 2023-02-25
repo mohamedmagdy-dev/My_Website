@@ -1,6 +1,8 @@
 // Start ToTOp btn
 let toTop = document.querySelector(".to_top");
 
+toTop.onclick = _=> window.scrollTo(0,0)
+
 // Start Header 
 let header = document.querySelector('header');
 
@@ -38,6 +40,9 @@ let aboutTitle = document.querySelector(".about .container .about_info h2");
 let aboutContent = document.querySelector(".about .container .about_info p");
 let aboutLink = document.querySelector(".about .container .about_info a");
 
+// Start Animation for selected work (show case)
+let showCase = document.querySelector(".show_case")
+let selectedWorkItems = document.querySelectorAll(".show_case .container .showcase_container .body > div")
 
 window.onscroll = _ => {
   if (window.scrollY >= ((aboutSection.offsetTop) - 650)) {
@@ -48,12 +53,32 @@ window.onscroll = _ => {
     setTimeout(() => aboutLink.style.cssText = "transform: translateX(0%);",2600);
   }
 
+  if (window.scrollY >= showCase.offsetTop - 200 )  {
+  // Start Animation for selected work (show case)
+    setTimeout(()=>{
+      selectedWorkItems[0].style.cssText = 'transform: translateX(0%)'
+    },2000)
+
+    setTimeout(()=>{
+      selectedWorkItems[1].style.cssText = 'transform: translateX(0%)'
+    },1000)
+
+    setTimeout(()=>{
+      selectedWorkItems[2].style.cssText = 'transform: translateX(0%)'
+    },1000)
+
+    setTimeout(()=>{
+      selectedWorkItems[3].style.cssText = 'transform: translateX(0%)'
+    },2000)
+  }
+
   // Start Show Scroll ToTop btn
   window.scrollY >= aboutSection.offsetTop 
   ? toTop.style.cssText = " opacity: 1; visibility: visible " 
   : toTop.style.cssText = "opacity: 0;  visibility: hidden"
 
   // Edit Header Background 
-    window.scrollY >= 100 ? header.style.backgroundColor = "white" 
-                          : header.style.backgroundColor = "inherit";
+    window.scrollY >= 100 ? header.style.cssText = "background-color: white; border-bottom: 1px solid black;" 
+                          : header.style.cssText = "background-color: inherit ; border-bottom: none;";
+                  
 }
