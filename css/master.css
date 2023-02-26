@@ -834,7 +834,7 @@ header .container nav ul li a:hover::before {
 
 /* Start insights */
 .insights {
-  padding: 100px 0;
+  padding: 100px 0 200px;
   background-color: var(--bgcolor-light-black);
 }
 
@@ -934,9 +934,65 @@ header .container nav ul li a:hover::before {
 }
 /* End insights */
 
+/* Start Contact me */
+.contact {
+  background-color: var(--bgcolor-dark-black);
+}
+
+.contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../imgs/footer-top-content-bg.webp);
+  background-size: cover;
+  height: 200px;
+  transform: translateY(-100px);
+  padding: 30px;
+  border-radius: 6px 6px 50px 6px;
+}
+
+.contact .container img {
+  width: 300px;
+}
+
+.contact .container p {
+  color: white;
+  font-size: 40px;
+}
+
+.contact .container a {
+  padding: 15px 25px;
+  width: 200px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: var(--color-red);
+  color: white;
+}
+
+@media (max-width: 991px) {
+
+  .contact .container {
+    flex-direction: column;
+    min-height: 200px;
+  }
+
+  .contact .container p {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .contact .container img {
+    display: none;
+  }
+}
+/* End Contact me */
+
 /* Start footer */
 footer {
-  padding: 50px 0;
+  padding-bottom: 50px;
   color: white;
   background-color: var(--bgcolor-dark-black);
 }
