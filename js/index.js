@@ -1,11 +1,3 @@
-// Start ToTOp btn
-let toTop = document.querySelector(".to_top");
-
-toTop.onclick = (_) => window.scrollTo(0, 0);
-
-// Start Header
-let header = document.querySelector("header");
-
 // Start Animation For Landing Section
 let landingP = document.querySelector(".landing .container .landing_content p");
 let landingH1 = document.querySelector(
@@ -67,22 +59,11 @@ let insightsCards = document.querySelectorAll(
   ".insights .container .insights_container .body > div"
 );
 
-// Start set year text in copy_right in footer
-let yearFooter = document.getElementsByClassName("year")[0];
-yearFooter.innerHTML = new Date().getFullYear();
-
-window.onscroll = (_) => {
+window.addEventListener("scroll", () => {
   // Start Show Scroll ToTop btn
   window.scrollY >= aboutSection.offsetTop
     ? (toTop.style.cssText = " opacity: 1; visibility: visible ")
     : (toTop.style.cssText = "opacity: 0;  visibility: hidden");
-
-  // Edit Header Background
-  window.scrollY >= 100
-    ? (header.style.cssText =
-        "background-color: white; border-bottom: 1px solid black;")
-    : (header.style.cssText =
-        "background-color: inherit ; border-bottom: none;");
 
   // Animation for about section
   if (window.scrollY >= aboutSection.offsetTop - 650) {
@@ -142,11 +123,14 @@ window.onscroll = (_) => {
 
   // Start Animation for insights
   if (window.scrollY >= insights.offsetTop - 400) {
-      setTimeout(() => {insightsCards[0].style.cssText = "transform: translateY(0%);"}, 800);
-      setTimeout(() => {insightsCards[1].style.cssText = "transform: translateY(0%);"}, 1400);
-      setTimeout(() => {insightsCards[2].style.cssText = "transform: translateY(0%);"}, 2000);
+    setTimeout(() => {
+      insightsCards[0].style.cssText = "transform: translateY(0%);";
+    }, 800);
+    setTimeout(() => {
+      insightsCards[1].style.cssText = "transform: translateY(0%);";
+    }, 1400);
+    setTimeout(() => {
+      insightsCards[2].style.cssText = "transform: translateY(0%);";
+    }, 2000);
   }
-  
-};
-
-console.log(insightsCards[0]);
+});

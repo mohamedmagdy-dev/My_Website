@@ -1,0 +1,104 @@
+
+/* Start project page */
+header .container nav ul li a {
+  color: rgb(151, 144, 144)
+}
+
+.projects_page {
+  background-color: var(--bgcolor-light-black);
+  padding: 100px 0 200px;
+}
+
+.projects_page .container {
+  min-height: 100vh;
+}
+
+.projects_page .container h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 100px;
+  z-index: 3;
+}
+
+.projects_page .container h1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  z-index: -2;
+  background-color: var(--bgcolor-dark-per);
+  transition: height 0.5s;
+}
+
+.projects_page .container h1:hover::before {
+  height: 100%;
+}
+
+.projects_page .container .project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px , 1fr));
+  gap: 20px;
+}
+
+.projects_page .container .project_container .project {
+  position: relative;
+}
+
+.projects_page .container .project_container .project .info {
+  position: absolute;
+  z-index: 10;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.projects_page .container .project_container .project .info h3 {
+  background-color: var(--bgcolor-light-black);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  padding: 5px;
+  transform: translateY(-100%);
+  transition: transform 1s;
+}
+
+.projects_page .container .project_container .project .info span {
+  display: block;
+  width: fit-content;
+  background-color: var(--bgcolor-light-black);
+  padding: 5px;
+  transform: translateY(100%);
+  transition: transform 1s;
+}
+
+.projects_page .container .project_container .project:hover .info h3 ,
+.projects_page .container .project_container .project:hover .info span { 
+  transform: translateY(0%);
+}
+
+.projects_page .container .project_container .project img {
+  border-radius: 10px ;
+  filter: grayscale(1);
+  transition: filter 0.5s;
+  max-width: 100%;
+}
+
+.projects_page .container .project_container .project:hover img {
+  filter: grayscale(0);
+}
+
+@media (max-width: 991px) {
+  .projects_page .container .project_container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects_page .container h1 {
+    font-size: 40px;
+  }
+}
+/* ENd project page */
