@@ -18,7 +18,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
-  cursor: url(../cursor/duck.png), auto
+  /* cursor: url(../cursor/duck.png), auto */
 }
 
 /* width */
@@ -167,6 +167,7 @@ a {
   cursor: pointer;
   z-index: 99;
   transition: 0.3s;
+  visibility: hidden;
 }
 
 /* End Custom Elements */

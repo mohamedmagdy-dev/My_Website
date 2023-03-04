@@ -1,0 +1,67 @@
+header .container nav ul li a {
+  color: rgb(151, 144, 144);
+}
+
+.about_page {
+  background-color: var(--bgcolor-light-black);
+}
+
+.about_page .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.about_page .container p {
+	text-align: center;
+}
+
+.about_page .container p:first-of-type {
+	font-size: 40px;
+	line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.about_page .container p:last-of-type {
+	font-family: "Anonymous Pro", monospace;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+.about_page .container p .insta {
+	color: #3f729b;
+}
+
+.about_page .container p .twitter {
+	color: #00aced;
+}
+
+.about_page .container p .pinterest {
+	color: #ea4c89;
+}
+
+.about_page .container p .Behance {
+	color: #007bb6;
+}
+
+.about_page .container p .LinkedIn {
+	color: #3f9b62;
+}
+
+@media (max-width: 767px) {
+	.about_page .container p:first-of-type {
+		font-size: 20px;
+		line-height: 40px;
+		margin-top: 80px;
+	}
+	
+	.about_page .container p:last-of-type {
+		font-family: "Anonymous Pro", monospace;
+		font-size: 15px;
+		line-height: 30px;
+	}
+}

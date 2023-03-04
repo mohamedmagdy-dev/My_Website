@@ -2,20 +2,7 @@
 
 let soundElement = document.createElement("audio");
 soundElement.setAttribute("src", "sounds/click_sound.mp3");
-clickSoundPlay();
-
-function clickSoundMute() {
-  document.onclick = () => soundElement.muted;
-}
-
-function clickSoundPlay() {
-  document.onclick = () => soundElement.play();
-}
-
-// // Start setting box
-// let settingBox = document.getElementsByClassName("setting_box")[0];
-// let settingBoxBtn = document.querySelector(".setting_box .open");
-// settingBoxBtn.onclick = () => settingBox.classList.toggle("open");
+// document.onclick = () => soundElement.play();
 
 // Start ToTOp btn
 let toTop = document.querySelector(".to_top");
@@ -32,9 +19,8 @@ window.addEventListener("scroll", () => {
   // Edit Header Background
 
   if (window.scrollY >= 50) {
-
-    header.style.cssText = "background-color: white; border-bottom: 1px solid black;";
+    header.style.cssText = "background-color: white;";
   } else {
-    header.style.cssText = "background-color: inherit ; border-bottom: none;color: inherit";
+    header.style.cssText = "background-color: inherit ;";
   }
 });
