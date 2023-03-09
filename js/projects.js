@@ -1,7 +1,7 @@
 let projectContainer = document.querySelector(".project_container");
 
 function projectGenerator() {
-  fetch("../json/project.json")
+  fetch("json/project.json")
     .then((data) => {
       return data.json();
     })
