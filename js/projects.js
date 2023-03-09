@@ -43,6 +43,18 @@ function projectGenerator() {
 projectGenerator();
 
 
+// Loading Screen 
+let lodingScreen = document.querySelector('.loading')
+window.addEventListener("load" , ()=> {
+  setTimeout(()=>{
+    lodingScreen.style.cssText = "opacity: 0;  visibility: hidden"
+  },3000)
+  setTimeout(()=>{
+    lodingScreen.remove()
+  },5000)
+})
+
+
 window.addEventListener("scroll", () => {
   // Start Show Scroll ToTop btn
   window.scrollY >= 100

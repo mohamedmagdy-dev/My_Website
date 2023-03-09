@@ -25,7 +25,17 @@ header .container nav ul li a {
   width: 20%;
 }
 
-.contact_page .container .info .cute:not(:last-of-type,:first-of-type) {
+.contact_page .container .info a {
+  color: white;
+  border-bottom: 2px solid white
+}
+
+.contact_page .container .info .cute:first-of-type {
+	padding: 0 !important;
+  padding-bottom: 30px !important;
+}
+
+.contact_page .container .info .cute:not(:last-of-type) {
 	border-bottom: 3px solid white;
 	padding: 30px 0;
 }
