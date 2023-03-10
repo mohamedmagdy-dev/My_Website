@@ -38,3 +38,11 @@
     transform: rotate(1000deg);
   }
 }
+
+
+@media (max-width: 991px) {
+  .loading .core {
+    width: 100px;
+    height: 100px;
+  }
+}

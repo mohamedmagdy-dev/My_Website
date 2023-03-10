@@ -19,6 +19,10 @@ header .container nav ul li a {
 	text-align: center;
 }
 
+.about_page .container p span {
+	transition:  0.3s;
+}
+
 .about_page .container p:first-of-type {
 	font-size: 40px;
 	line-height: 50px;
@@ -29,6 +33,7 @@ header .container nav ul li a {
 	font-family: "Anonymous Pro", monospace;
 	font-size: 20px;
 	line-height: 30px;
+
 }
 
 
