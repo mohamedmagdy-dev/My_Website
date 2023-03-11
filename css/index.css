@@ -446,11 +446,7 @@
 }
 
 .show_case .container .showcase_container .body {
-  display: grid;
-  grid-template-areas:
-    "one one one one one one one two two"
-    "three three four four four four four four four";
-  grid-template-rows: repeat(2, 400px);
+  display: flex;
   gap: 30px;
   overflow: hidden;
 }
@@ -459,31 +455,23 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-color: white;
+  border: 2px solid white;
   border-radius: 10px;
   transition: transform 1s;
   overflow: hidden;
+  width: calc(100% / 2);
+  height: 400px;
+
 }
 
 .show_case .container .showcase_container .body .one {
-  grid-area: one;
   transform: translateX(-110%);
 }
 
 .show_case .container .showcase_container .body .two {
-  grid-area: two;
   transform: translateX(110%);
 }
 
-.show_case .container .showcase_container .body .three {
-  grid-area: three;
-  transform: translateX(-110%);
-}
-
-.show_case .container .showcase_container .body .four {
-  grid-area: four;
-  transform: translateX(110%);
-}
 
 .show_case .container .showcase_container .body > div img {
   width: 100%;
@@ -511,31 +499,25 @@
   font-size: 25px;
   margin-bottom: 10px;
   text-transform: capitalize;
+  background-color: var(--bgcolor-dark-black);
+  padding: 5px;
 }
 
 .show_case .container .showcase_container .body > div .info span {
   font-family: "Anonymous Pro", monospace;
-}
-
-@media (max-width: 1199px) {
-  .show_case .container .showcase_container .body {
-    display: grid;
-    grid-template-areas:
-      "one one one one one two two two two two"
-      "three three three three three four four four four four";
-  }
+  background-color: var(--bgcolor-dark-black);
+  padding: 5px;
 }
 
 @media (max-width: 991px) {
   .show_case .container .showcase_container .body {
-    display: grid;
-    grid-template-areas:
-      "one one one one one one one one one one "
-      "two two two two two two two two two two"
-      "three three three three three three three three three three "
-      "four four four four four four four four four four";
-    grid-template-rows: repeat(4, 300px);
+    flex-direction: column;
   }
+
+  .show_case .container .showcase_container .body > div {
+    width: 100%;
+  }
+
   .show_case .container .showcase_container .body > div .info a h3 {
     font-size: 20px;
   }

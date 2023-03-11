@@ -20,12 +20,13 @@ titleContent.split("").forEach((el)=> {
 let titleSpan = document.querySelectorAll('.title span');
 
 titleSpan.forEach((el)=> {
-	let randomColor = arrayOfColors[Math.floor(Math.random() * arrayOfColors.length)]
 	el.onmouseover = ()=> {
+		let randomColor = arrayOfColors[Math.floor(Math.random() * arrayOfColors.length)]
 		el.style.cssText = `font-size: 100px; color: ${randomColor}`
 	}
-
+	
 	el.onmouseleave = ()=> {
+		let randomColor = arrayOfColors[Math.floor(Math.random() * arrayOfColors.length)]
 		el.style.cssText = `font-size: inherit; color: ${randomColor}`
 	}
 }) 

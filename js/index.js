@@ -89,19 +89,8 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= showCase.offsetTop - 200) {
     setTimeout(() => {
       selectedWorkItems[0].style.cssText = "transform: translateX(0%)";
-    }, 2000);
-
-    setTimeout(() => {
       selectedWorkItems[1].style.cssText = "transform: translateX(0%)";
     }, 1000);
-
-    setTimeout(() => {
-      selectedWorkItems[2].style.cssText = "transform: translateX(0%)";
-    }, 1000);
-
-    setTimeout(() => {
-      selectedWorkItems[3].style.cssText = "transform: translateX(0%)";
-    }, 2000);
   }
 
   // Start Animation for our services

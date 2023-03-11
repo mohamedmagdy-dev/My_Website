@@ -47,6 +47,7 @@ header .container nav ul li a {
 
 .projects_page .container .project_container .project {
   position: relative;
+  border: 2px solid white;
 }
 
 .projects_page .container .project_container .project .info {
