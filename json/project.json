@@ -1,68 +1,14 @@
 [
 	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
+		"title" : "Elzero World Design",
+		"category" : "html # css # js # blog",
+		"img_path" : "imgs/projects/elzero_world.png",
+		"project_path" : "pages/projects/elzero_world/index.html"
 	},
 	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png", 
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
-	},
-	{
-		"title" : "leon project to show work",
-		"category" : "html css js portfolio",
-		"img_path" : "imgs/projects/project1.png",
-		"project_path" : "pages/projects/project1.html"
+		"title" : "Elzero DashBoard",
+		"category" : "html # css # dashboard",
+		"img_path" : "imgs/projects/elzero_dashBoard.png",
+		"project_path" : "pages/projects/elzero_dashBoard/index.html"
 	}
 ]

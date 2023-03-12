@@ -64,7 +64,7 @@ header .container nav ul li a {
   text-transform: capitalize;
   margin-bottom: 20px;
   padding: 5px;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
   transition: transform 1s;
 }
 
@@ -82,16 +82,16 @@ header .container nav ul li a {
   transform: translateY(0%);
 }
 
+.projects_page .container .project_container .project {
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+
 .projects_page .container .project_container .project img {
-  border-radius: 10px ;
-  filter: grayscale(1);
-  transition: filter 0.5s;
   max-width: 100%;
 }
 
-.projects_page .container .project_container .project:hover img {
-  filter: grayscale(0);
-}
 
 @media (max-width: 991px) {
   .projects_page .container .project_container {

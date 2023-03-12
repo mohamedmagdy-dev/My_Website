@@ -2,7 +2,7 @@
 
 let soundElement = document.createElement("audio");
 soundElement.setAttribute("src", "sounds/click_sound.mp3");
-// document.onclick = () => soundElement.play();
+document.onclick = () => soundElement.play();
 
 // Start ToTOp btn
 let toTop = document.querySelector(".to_top");
