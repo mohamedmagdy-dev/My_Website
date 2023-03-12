@@ -460,7 +460,7 @@
   transition: transform 1s;
   overflow: hidden;
   width: calc(100% / 2);
-  height: 400px;
+  height: 500px;
 
 }
 
@@ -475,7 +475,8 @@
 
 .show_case .container .showcase_container .body > div img {
   width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .show_case .container .showcase_container .body > div .info {
