@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohamed Magdy Elsayed | FrontEnd Web Developer">
+	<link rel="stylesheet" href="../../../css/normalize.css">
+	<link rel="stylesheet" href="../../../css/all.min.css">
+	<link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../../css/article.css">
+  <title>Count Input Characters And Fill</title>
+</head>
+<body>
+
+  <!-- Start toTop btn -->
+	<div class="to_top">
+		<i class="fa-solid fa-arrow-up"></i>
+	</div>
+	<!-- End toTop btn -->
+
+  <!-- Start Header -->
+	<header>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="../../../index.html">home</a></li>
+					<li><a href="../../../projects.html" >projects</a></li>
+					<li><a href="../../../about.html">about</a></li>
+					<li><a href="../../../blog.html" class="active">blog</a></li>
+					<li><a href="../../../contact.html">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- End Header -->
+
+  <!-- Start Article -->
+  <div class="article">
+    <div class="container">
+      <h1>Count Input Characters And Fill Borders</h1>
+      <img src="blog.PNG" alt="">
+      <div class="about_blog">
+        <h2>
+          About Me
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </h2>
+        <p>
+          this idea to make progress in input field.
+        </p>
+      </div>
+      <pre class="html">
+        <div class="tool">Copy Code</div>
+        <code>
+            &lt;<span class="tag">!DOCTYPE html</span>&gt;
+            &lt;<span class="tag">html</span> <span class="attr_name">lang</span>=<span class="attr_value">"en"</span>&gt;
+            &lt;<span class="tag">head</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attr_name">charset</span>=<span class="attr_value">"UTF-8"</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attr_name">http-equiv</span>=<span class="attr_value">"X-UA-Compatible"</span> <span class="attr_name">content</span>=<span class="attr_value">"IE=edge"</span> &gt;
+              &lt;<span class="tag">meta</span> <span class="attr_name">name</span>=<span class="attr_value">"viewport"</span> <span class="attr_name">content</span>=<span class="attr_value">"width=device-width, initial-scale=1.0"</span>&gt;
+              &lt;<span class="tag">link</span> <span class="attr_name">rel</span>=<span class="attr_value">"stylesheet"</span> <span class="attr_name">href</span>=<span class="attr_value">"master.css"</span>&gt;
+              &lt;<span class="tag">title</span>&gt;Document&lt;<span class="tag">/title</span>&gt;
+            &lt;<span class="tag">/head</span>&gt;
+            &lt;<span class="tag">body</span>&gt;
+              &lt;<span class="tag">div</span> <span class="attr_name">class</span>=<span class="attr_value">"type_password"</span>&gt;
+                &lt;<span class="tag">input</span> <span class="attr_name">type</span>=<span class="attr_value">"password"</span><span class="attr_name">placeholder</span>=<span class="attr_value">"Enter Your Password ❤"</span><span class="attr_name">maxlength</span>=<span class="attr_value">"20"</span>&gt;
+                &lt;<span class="tag">span</span>&gt;&lt;<span class="tag">/span</span>&gt;
+                &lt;<span class="tag">span</span>&gt;&lt;<span class="tag">/span</span>&gt;
+              &lt;<span class="tag">/div</span>&gt;
+              &lt;<span class="tag">script</span> <span class="attr_name">src</span>=<span class="attr_value">"main.js"</span>&gt;&lt;<span class="tag">/script</span>&gt;
+            &lt;<span class="tag">/body</span>&gt;
+            &lt;<span class="tag">/html</span>&gt;
+        </code>
+      </pre>
+      <pre class="css">
+        <div class="tool">Copy Code</div>
+        <code>
+          <span class="selector">*</span> {
+            <span class="property">padding:</span> 0;
+            <span class="property">margin:</span> 0;
+            <span class="property">box-sizing:</span> border-box;
+          }
+
+          <span class="selector">body</span> {
+            <span class="property">height:</span> 100vh;
+            <span class="property">display:</span> flex;
+            <span class="property">align-items:</span> center;
+            <span class="property">justify-content:</span> center;
+          }
+
+          <span class="selector">.type_password</span> {
+            <span class="property">position:</span> relative;
+          }
+
+          <span class="selector">.type_password input</span> {
+            <span class="property">height:</span> 50px;
+            <span class="property">width:</span> 400px;
+            <span class="property">padding-left:</span> 10px;
+            <span class="property">font-size:</span> 20px;
+            <span class="property">border:</span> none;
+            <span class="property">background-color:</span> #EEE;
+            <span class="property">outline:</span> none;
+          }
+
+          <span class="selector">.type_password :is(span)</span> {
+            <span class="property">content:</span> '';
+            <span class="property">position:</span> absolute;
+            <span class="property">height:</span> 5px;
+            <span class="property">left:</span> 0;
+            <span class="property">bottom:</span> -5px;
+          }
+          
+          <span class="selector">.type_password span:first-of-type</span> {
+            <span class="property">width:</span> 100%;
+            <span class="property">background-color:</span> #ddd;
+          }
+          
+          <span class="selector">.type_password span:last-of-type</span> {
+            <span class="property">width:</span> 0%;
+            <span class="property">transition:</span> 0.5s;
+            <span class="property">background-color:</span> rgba(136, 218, 43, 0.863);
+          }
+        </code>
+      </pre>
+      <pre class="js"></pre>
+      <div class="preview">
+        <code>
+          <head>
+            <style>
+              .type_password {
+                position: relative;
+                width: fit-content;
+              }
+
+              .type_password input {
+                height: 50px;
+                width: 400px;
+                padding-left: 10px;
+                font-size: 20px;
+                border: none;
+                background-color: #EEE;
+                outline: none;
+              }
+
+              .type_password :is(span) {
+                content: '';
+                position: absolute;
+                height: 5px;
+                left: 0;
+                bottom: -5px;
+              }
+              
+              .type_password span:first-of-type {
+                width: 100%;
+                background-color: #ddd;
+              }
+              
+              .type_password span:last-of-type {
+                width: 0%;
+                transition: 0.5s;
+                background-color: rgba(136, 218, 43, 0.863);
+              }
+            </style>
+          </head>
+          <body>
+            <div class="type_password">
+              <input type="password" placeholder="Enter Your Password ❤"maxlength="20">
+              <span></span>
+              <span></span>
+            </div>
+            <script>
+              let passwordField = document.querySelector(".type_password input");
+              let passwordFieldProg = document.querySelector(".type_password span:last-of-type");
+              let maxLength = passwordField.getAttribute("maxlength");
+
+              passwordField.oninput = ()=> {
+                let passwordLength = passwordField.value.length
+                if( passwordLength <= maxLength) {
+                  passwordFieldProg.style.width = `${(passwordLength * 100) / maxLength}%`
+                }
+              }
+            </script>
+        </code>
+      </div>
+    </div>
+  </div>
+  <!-- Start Article -->
+
+  <!-- Start Contact me -->
+	<div class="contact">
+		<div class="container">
+			<img src="../../../imgs/footer-top-content.webp" alt="">
+			<p>Ready to take your site to the next level?</p>
+			<a href="mailto:mohamedmagdyelsayed7@gmail.com">contact me</a>
+		</div>
+	</div>
+	<!-- End Contact me -->
+
+	<!-- Start footer -->
+	<footer>
+		<div class="container">
+			<div class="col">
+				<h3>our address</h3>
+				<p>
+					Nag Arabs
+					Barricade
+					Onion enamel section
+					Alexandria
+				</p>
+			</div>
+			<div class="col">
+				<h3>let's chat
+				</h3>
+				<p>
+					Enough Talk, Let’s Build
+					Something Together.
+					<a href="mailto:mohamedmagdyelsayed7@gmail.com">mohamedmagdyelsayed7@gmail.com</a>
+				</p>
+			</div>
+			<div class="col">
+				<h3>follow us</h3>
+				<ul>
+					<li>
+						<a href="https://web.facebook.com/profile.php?id=100076058659673" target="_blank" >facebook</a>
+					</li>
+					<li>
+						<a href="https://github.com/mohamedmagdy-dev" target="_blank" >githup</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/mohamedmagdy-dev/" target="_blank" >linked in</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>call us</h3>
+				<p>
+					+2 01275129950
+				</p>
+			</div>
+		</div>
+		<div class="copy_right">
+			<p>
+				© <span class="year"></span> Mohamed Magdy All Rights Reserved
+			</p>
+		</div>
+	</footer>
+	<!-- End footer -->
+  <script src="../../../js/all.js"></script>
+  <script src="../../../js/article.js"></script>
+</body>
+</html>

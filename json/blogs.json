@@ -1,68 +1,8 @@
 [
 	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
-	},
-	{
-		"img_path" : "imgs/blogs/blog1.jpg",
-		"blog_title" : "Blog Title Here Like This?",
-		"blog_link" : "pages/blog/blog/blog1.html",
-		"category" : "InterViews"
+		"img_path" : "imgs/blogs/blog1.png",
+		"blog_title" : "Count Input Characters And Fill",
+		"blog_link" : "pages/blogs/input_count/blog.html",
+		"category" : "component"
 	}
 ]
