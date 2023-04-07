@@ -86,7 +86,7 @@ window.addEventListener("scroll", () => {
   }
 
   // Start Animation for selected work (show case)
-  if (window.scrollY >= showCase.offsetTop - 200) {
+  if (window.scrollY >= showCase.offsetTop - 500) {
     setTimeout(() => {
       selectedWorkItems[0].style.cssText = "transform: translateX(0%)";
       selectedWorkItems[1].style.cssText = "transform: translateX(0%)";
@@ -94,7 +94,7 @@ window.addEventListener("scroll", () => {
   }
 
   // Start Animation for our services
-  if (window.scrollY >= ourServices.offsetTop - 400) {
+  if (window.scrollY >= ourServices.offsetTop - 700) {
     setTimeout(
       () =>
         (ourServicesSectionTitle.style.cssText = "transform: translateX(0%);"),
@@ -111,7 +111,7 @@ window.addEventListener("scroll", () => {
   }
 
   // Start Animation for insights
-  if (window.scrollY >= insights.offsetTop - 400) {
+  if (window.scrollY >= insights.offsetTop - 700) {
     setTimeout(() => {
       insightsCards[0].style.cssText = "transform: translateY(0%);";
     }, 800);

@@ -7,6 +7,10 @@ header .container nav ul li a {
   color: #a6e22e;
 }
 
+.method_value {
+  color: #ff9800;
+}
+
 :is(.attr_value,.method) {
   color: #e6db74;
 }
@@ -56,6 +60,7 @@ header .container nav ul li a {
 
 .article .container .about_blog {
   color: white;
+  width: 100%;
 }
 
 .article .container .about_blog h2 {

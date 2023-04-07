@@ -122,7 +122,21 @@
           }
         </code>
       </pre>
-      <pre class="js"></pre>
+      <pre class="js">
+        <div class="tool">Copy Code</div>
+        <code>
+          <span class="keyword">let</span> passwordField = <span class="keyword">document</span>.<span class="method">querySelector</span><span class="method_value">(".type_password input")</span>;
+          <span class="keyword">let</span> passwordFieldProg = <span class="keyword">document</span>.<span class="method">querySelector</span><span class="method_value">(".type_password span:last-of-type")</span>;
+          <span class="keyword">let</span> maxLength = passwordField.<span class="method">getAttribute</span><span class="method_value">("maxlength")</span>;
+
+          passwordField.<span class="keyword">oninput</span> = ()=> {
+            <span class="keyword">let</span> passwordLength = passwordField.<span class="keyword">value.length</span>
+            <span class="keyword">if </span>(<span class="condition">passwordLength <= maxLength</span>) {
+              passwordFieldProg.<span class="keyword">style.width</span> = `${(passwordLength * 100) / maxLength}%`
+            }
+          }
+        </code>
+      </pre>
       <div class="preview">
         <code>
           <head>
